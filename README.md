@@ -1,5 +1,4 @@
-# A-B-Testing-Simulator-for-Feature-Rollouts
-Simulate and analyze A/B tests for new product features (e.g., UI changes, pricing models)
+
 # 📊 A/B Testing Simulator for Feature Rollouts
 
 ## Overview
@@ -39,5 +38,56 @@ Built with **Python** and **Streamlit**, the tool allows interactive experimenta
 ```bash
 git clone https://github.com/your-username/ab-testing-simulator.git
 cd ab-testing-simulator
+```
+
+### 2. Install Dependencies
+```bash
 pip install -r requirements.txt
+```
+
+### 3. Run the Streamlit App
+```bash
 streamlit run ab_test_app.py
+```
+
+### 4. Open in Browser
+Streamlit will provide a local URL (default: `http://localhost:8501`) to interact with the app.
+
+---
+
+---
+
+## 📊 Example Workflow
+1. Set number of users and conversion rates for control & treatment groups.
+2. Run simulation to generate synthetic experiment data.
+3. View statistical results:
+   - Conversion rates
+   - Lift %
+   - p-value
+   - Confidence intervals
+4. Visualize conversion comparison.
+5. Read summary report with rollout recommendation.
+
+---
+
+## 📖 Case Study
+**Question:** Did the new checkout flow improve conversion?  
+- If **p-value < 0.05** and **lift > 0** → ✅ Roll out new feature.  
+- If **p-value < 0.05** and **lift < 0** → ❌ Do not roll out.  
+- If **p-value ≥ 0.05** → ⚠️ No statistically significant difference, keep testing.
+
+---
+
+## 📌 Deliverables
+- Python notebook (Colab-ready).
+- Streamlit app for interactive simulation.
+- Statistical analysis outputs.
+- Case study demonstration.
+- Summary report for product team.
+
+---
+
+## 🧑‍💻 Contributors
+- Mohammad Razeen Iqbal  
+- Open-source community contributions welcome!
+
